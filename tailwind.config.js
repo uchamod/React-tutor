@@ -6,7 +6,32 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    theme: {
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
+      },
+      fontFamily: {
+        'body': [
+          'Inter', 
+          'ui-sans-serif', 
+          'system-ui',
+          // other fallback fonts
+        ],
+        'sans': [
+          'Inter', 
+          'ui-sans-serif', 
+          'system-ui',
+          // other fallback fonts
+        ]
+      }
+    },
     extend: {
+      fontFamily: {
+        poppins: ["poppins", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
